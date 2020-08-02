@@ -15,6 +15,8 @@
 		2EB8F90D24D5AC8C0028FC70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F90B24D5AC8C0028FC70 /* LaunchScreen.storyboard */; };
 		2EB8F91824D5AC8C0028FC70 /* DynamicCollectionViewSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F91724D5AC8C0028FC70 /* DynamicCollectionViewSampleTests.swift */; };
 		2EB8F92324D5AC8C0028FC70 /* DynamicCollectionViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F92224D5AC8C0028FC70 /* DynamicCollectionViewSampleUITests.swift */; };
+		2EB8F93224D5ACC00028FC70 /* DynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F93024D5ACC00028FC70 /* DynamicCollectionViewCell.swift */; };
+		2EB8F93324D5ACC00028FC70 /* DynamicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		2EB8F91E24D5AC8C0028FC70 /* DynamicCollectionViewSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicCollectionViewSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EB8F92224D5AC8C0028FC70 /* DynamicCollectionViewSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewSampleUITests.swift; sourceTree = "<group>"; };
 		2EB8F92424D5AC8C0028FC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EB8F93024D5ACC00028FC70 /* DynamicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				2EB8F90924D5AC8C0028FC70 /* Assets.xcassets */,
 				2EB8F90B24D5AC8C0028FC70 /* LaunchScreen.storyboard */,
 				2EB8F90E24D5AC8C0028FC70 /* Info.plist */,
+				2EB8F93024D5ACC00028FC70 /* DynamicCollectionViewCell.swift */,
+				2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */,
 			);
 			path = DynamicCollectionViewSample;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 			files = (
 				2EB8F90D24D5AC8C0028FC70 /* LaunchScreen.storyboard in Resources */,
 				2EB8F90A24D5AC8C0028FC70 /* Assets.xcassets in Resources */,
+				2EB8F93324D5ACC00028FC70 /* DynamicCollectionViewCell.xib in Resources */,
 				2EB8F90824D5AC8A0028FC70 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +268,7 @@
 			files = (
 				2EB8F90524D5AC8A0028FC70 /* ViewController.swift in Sources */,
 				2EB8F90124D5AC8A0028FC70 /* AppDelegate.swift in Sources */,
+				2EB8F93224D5ACC00028FC70 /* DynamicCollectionViewCell.swift in Sources */,
 				2EB8F90324D5AC8A0028FC70 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
