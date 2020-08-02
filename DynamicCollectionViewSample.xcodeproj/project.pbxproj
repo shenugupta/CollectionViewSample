@@ -17,6 +17,8 @@
 		2EB8F92324D5AC8C0028FC70 /* DynamicCollectionViewSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F92224D5AC8C0028FC70 /* DynamicCollectionViewSampleUITests.swift */; };
 		2EB8F93224D5ACC00028FC70 /* DynamicCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F93024D5ACC00028FC70 /* DynamicCollectionViewCell.swift */; };
 		2EB8F93324D5ACC00028FC70 /* DynamicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */; };
+		2EB8F93A24D68EF90028FC70 /* DynamicImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F93824D68EF90028FC70 /* DynamicImageCell.swift */; };
+		2EB8F93B24D68EF90028FC70 /* DynamicImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93924D68EF90028FC70 /* DynamicImageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2EB8F92424D5AC8C0028FC70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2EB8F93024D5ACC00028FC70 /* DynamicCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewCell.swift; sourceTree = "<group>"; };
 		2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicCollectionViewCell.xib; sourceTree = "<group>"; };
+		2EB8F93824D68EF90028FC70 /* DynamicImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicImageCell.swift; sourceTree = "<group>"; };
+		2EB8F93924D68EF90028FC70 /* DynamicImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				2EB8F90E24D5AC8C0028FC70 /* Info.plist */,
 				2EB8F93024D5ACC00028FC70 /* DynamicCollectionViewCell.swift */,
 				2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */,
+				2EB8F93824D68EF90028FC70 /* DynamicImageCell.swift */,
+				2EB8F93924D68EF90028FC70 /* DynamicImageCell.xib */,
 			);
 			path = DynamicCollectionViewSample;
 			sourceTree = "<group>";
@@ -238,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB8F93B24D68EF90028FC70 /* DynamicImageCell.xib in Resources */,
 				2EB8F90D24D5AC8C0028FC70 /* LaunchScreen.storyboard in Resources */,
 				2EB8F90A24D5AC8C0028FC70 /* Assets.xcassets in Resources */,
 				2EB8F93324D5ACC00028FC70 /* DynamicCollectionViewCell.xib in Resources */,
@@ -267,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EB8F90524D5AC8A0028FC70 /* ViewController.swift in Sources */,
+				2EB8F93A24D68EF90028FC70 /* DynamicImageCell.swift in Sources */,
 				2EB8F90124D5AC8A0028FC70 /* AppDelegate.swift in Sources */,
 				2EB8F93224D5ACC00028FC70 /* DynamicCollectionViewCell.swift in Sources */,
 				2EB8F90324D5AC8A0028FC70 /* SceneDelegate.swift in Sources */,
