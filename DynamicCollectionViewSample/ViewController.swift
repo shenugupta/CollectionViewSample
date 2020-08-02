@@ -14,14 +14,14 @@ class ViewController: UIViewController {
     var itemsArr = ["Hi I am very good","Hi I am very good Hi I am very good Hi I am very good","Hi I am very good Hi I am very good Hi I am very good Hi I am very good", "Hi I am very good  Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good"]
     
    
-   var imageArr = [UIImage(named: "10262165_stock-photo-holiday-burning-multicolored-candles-of-different-height"),UIImage(named: "five-stacks-coins-different-height-white-background-84931965"),UIImage(named: "images-2"),UIImage(named: "images"),UIImage(named: "stockfresh_id4966754_1d01b6")]
+   var imageArr = [UIImage(named: "image1"),UIImage(named: "image2"),UIImage(named: "image3"),UIImage(named: "image4")]
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        collectionView.register(UINib.init(nibName: "DynamicImageCell", bundle: nil), forCellWithReuseIdentifier: "DynamicImageCell")
-        collectionView.register(UINib.init(nibName: "DynamicCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DynamicCollectionViewCell")
+        collectionView.register(UINib.init(nibName: "DynamicImageCell", bundle: nil), forCellWithReuseIdentifier: "DynamicImageCell")
+//        collectionView.register(UINib.init(nibName: "DynamicCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DynamicCollectionViewCell")
         if let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
                    flowLayout.estimatedItemSize = CGSize(width: 1,height: 1)
          }
@@ -38,10 +38,10 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DynamicImageCell", for: indexPath) as! DynamicImageCell
-         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DynamicCollectionViewCell", for: indexPath) as! DynamicCollectionViewCell
-       // cell.dynamicImageView.image = imageArr[indexPath.row]
-        cell.textLabel.text = itemsArr[indexPath.row]
+       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DynamicImageCell", for: indexPath) as! DynamicImageCell
+//         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DynamicCollectionViewCell", for: indexPath) as! DynamicCollectionViewCell
+        cell.dynamicImageView.image = imageArr[indexPath.row]
+      //  cell.textLabel.text = itemsArr[indexPath.row]
         return cell
     }
     
@@ -49,13 +49,7 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource {
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-           return 0
-       }
-       func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-           return 0
-       }
-    
+       
     
     
 //    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
