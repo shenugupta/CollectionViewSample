@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var itemsArr = ["Hi I am very good","Hi I am very good Hi I am very good Hi I am very good","Hi I am very good Hi I am very good Hi I am very good Hi I am very good", "Hi I am very good  Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good"]
+    var itemsArr: [String]
+        = ["Hi I am very good","Hi I am very good Hi I am very good Hi I am very good","Hi I am very good Hi I am very good Hi I am very good Hi I am very good", "Hi I am very good  Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good"]
     
    
    var imageArr = [UIImage(named: "image1"),UIImage(named: "image2"),UIImage(named: "image3"),UIImage(named: "image4")]
@@ -39,8 +40,10 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DynamicImageCell", for: indexPath) as! DynamicImageCell
-//         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DynamicCollectionViewCell", for: indexPath) as! DynamicCollectionViewCell
+        cell.dynamicImageView.contentMode = .scaleAspectFit
         cell.dynamicImageView.image = imageArr[indexPath.row]
+        cell.dynamicImageView.frame = CGRect(x: 0, y: 0, width: cell.dynamicImageView.image!.size.width, height: cell.dynamicImageView.image!.size.height)
+        cell.contentView.frame = cell.dynamicImageView.frame
       //  cell.textLabel.text = itemsArr[indexPath.row]
         return cell
     }
@@ -49,43 +52,16 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource {
         return 1
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
        
-    
-    
-//    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//
-//    }
- 
+        guard let image = imageArr[indexPath.row] else {
+            return CGSize(width: 0, height: 0)
+        }
+       
+        return CGSize(width: image.size.width, height: image.size.height)
+    }
 }
 
-//extension ViewController: UICollectionViewDelegateFlowLayout {
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return size(for: indexPath)
-//    }
-//
-//    private func size(for indexPath: IndexPath) -> CGSize {
-//        // load cell from Xib
-//        let cell = Bundle.main.loadNibNamed("DynamicCollectionViewCell", owner: self, options: nil)?.first as! DynamicCollectionViewCell
-//        cell.textLabel.text = itemsArr[indexPath.row]
-//
-//        // configure cell with data in it
-//        
-//        cell.setNeedsLayout()
-//        cell.layoutIfNeeded()
-//
-//        // width that you want
-//        let width = collectionView.frame.width
-//        let height: CGFloat = 0
-//
-//        let targetSize = CGSize(width: width, height: height)
-//
-//        // get size with width that you want and automatic height
-//        let size = cell.contentView.systemLayoutSizeFitting(targetSize, withHorizontalFittingPriority: .defaultHigh, verticalFittingPriority: .fittingSizeLevel)
-//        // if you want height and width both to be dynamic use below
-//        // let size = cell.contentView.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
-//
-//        return size
-//    }
+
 
 
