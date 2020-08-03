@@ -19,6 +19,8 @@
 		2EB8F93324D5ACC00028FC70 /* DynamicCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */; };
 		2EB8F93A24D68EF90028FC70 /* DynamicImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F93824D68EF90028FC70 /* DynamicImageCell.swift */; };
 		2EB8F93B24D68EF90028FC70 /* DynamicImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93924D68EF90028FC70 /* DynamicImageCell.xib */; };
+		2EB8F93D24D7F1510028FC70 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93C24D7F1510028FC70 /* Photos.xcassets */; };
+		2EB8F93F24D7F16C0028FC70 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93E24D7F16C0028FC70 /* Photos.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		2EB8F93124D5ACC00028FC70 /* DynamicCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicCollectionViewCell.xib; sourceTree = "<group>"; };
 		2EB8F93824D68EF90028FC70 /* DynamicImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicImageCell.swift; sourceTree = "<group>"; };
 		2EB8F93924D68EF90028FC70 /* DynamicImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicImageCell.xib; sourceTree = "<group>"; };
+		2EB8F93C24D7F1510028FC70 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Photos.xcassets; path = "../../../../Downloads/UICollectionView-Custom-Layout-2/Final_project/Pinterest/Assets/Photos.xcassets"; sourceTree = "<group>"; };
+		2EB8F93E24D7F16C0028FC70 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Photos.plist; path = "../../../../Downloads/UICollectionView-Custom-Layout-2/Final_project/Pinterest/Assets/Photos.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 		2EB8F8FF24D5AC8A0028FC70 /* DynamicCollectionViewSample */ = {
 			isa = PBXGroup;
 			children = (
+				2EB8F93C24D7F1510028FC70 /* Photos.xcassets */,
+				2EB8F93E24D7F16C0028FC70 /* Photos.plist */,
 				2EB8F90024D5AC8A0028FC70 /* AppDelegate.swift */,
 				2EB8F90224D5AC8A0028FC70 /* SceneDelegate.swift */,
 				2EB8F90424D5AC8A0028FC70 /* ViewController.swift */,
@@ -246,6 +252,8 @@
 			files = (
 				2EB8F93B24D68EF90028FC70 /* DynamicImageCell.xib in Resources */,
 				2EB8F90D24D5AC8C0028FC70 /* LaunchScreen.storyboard in Resources */,
+				2EB8F93F24D7F16C0028FC70 /* Photos.plist in Resources */,
+				2EB8F93D24D7F1510028FC70 /* Photos.xcassets in Resources */,
 				2EB8F90A24D5AC8C0028FC70 /* Assets.xcassets in Resources */,
 				2EB8F93324D5ACC00028FC70 /* DynamicCollectionViewCell.xib in Resources */,
 				2EB8F90824D5AC8A0028FC70 /* Main.storyboard in Resources */,

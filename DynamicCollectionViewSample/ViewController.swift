@@ -52,14 +52,14 @@ extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource {
         return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-       
-        guard let image = imageArr[indexPath.row] else {
-            return CGSize(width: 0, height: 0)
-        }
-       
-        return CGSize(width: image.size.width, height: image.size.height)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//       
+//        guard let image = imageArr[indexPath.row] else {
+//            return CGSize(width: 0, height: 0)
+//        }
+//       
+//        return CGSize(width: image.size.width, height: image.size.height)
+//    }
 }
 
 
