@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var collectionView: UICollectionView!
+
+    var photos = Photo.allPhotos()
     
     var itemsArr: [String]
         = ["Hi I am very good","Hi I am very good Hi I am very good Hi I am very good","Hi I am very good Hi I am very good Hi I am very good Hi I am very good", "Hi I am very good  Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good Hi I am very good"]
@@ -35,13 +38,14 @@ class ViewController: UIViewController {
 
 extension ViewController:UICollectionViewDelegate,UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return itemsArr.count
+       return photos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DynamicImageCell", for: indexPath) as! DynamicImageCell
         cell.dynamicImageView.contentMode = .scaleAspectFit
-        cell.dynamicImageView.image = imageArr[indexPath.row]
+        let photo = photos[indexPath.row]
+        cell.dynamicImageView.image = photo.image
         cell.dynamicImageView.frame = CGRect(x: 0, y: 0, width: cell.dynamicImageView.image!.size.width, height: cell.dynamicImageView.image!.size.height)
         cell.contentView.frame = cell.dynamicImageView.frame
       //  cell.textLabel.text = itemsArr[indexPath.row]

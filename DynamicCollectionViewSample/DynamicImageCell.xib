@@ -30,7 +30,6 @@
                     </imageView>
                 </subviews>
             </view>
-            <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="H0R-4D-Ob5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FCA-gZ-HuP"/>
                 <constraint firstAttribute="trailing" secondItem="H0R-4D-Ob5" secondAttribute="trailing" id="cCv-0g-Ecc"/>
