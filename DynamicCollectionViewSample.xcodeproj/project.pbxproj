@@ -22,6 +22,7 @@
 		2EB8F93D24D7F1510028FC70 /* Photos.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93C24D7F1510028FC70 /* Photos.xcassets */; };
 		2EB8F93F24D7F16C0028FC70 /* Photos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8F93E24D7F16C0028FC70 /* Photos.plist */; };
 		2EB8F94124D7F2860028FC70 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8F94024D7F2860028FC70 /* Photo.swift */; };
+		2EC8E9A724DB0D66001FD47A /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC8E9A624DB0D66001FD47A /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		2EB8F93C24D7F1510028FC70 /* Photos.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Photos.xcassets; path = "../../../../Downloads/UICollectionView-Custom-Layout-2/Final_project/Pinterest/Assets/Photos.xcassets"; sourceTree = "<group>"; };
 		2EB8F93E24D7F16C0028FC70 /* Photos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Photos.plist; path = "../../../../Downloads/UICollectionView-Custom-Layout-2/Final_project/Pinterest/Assets/Photos.plist"; sourceTree = "<group>"; };
 		2EB8F94024D7F2860028FC70 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		2EC8E9A624DB0D66001FD47A /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 				2EB8F93824D68EF90028FC70 /* DynamicImageCell.swift */,
 				2EB8F93924D68EF90028FC70 /* DynamicImageCell.xib */,
 				2EB8F94024D7F2860028FC70 /* Photo.swift */,
+				2EC8E9A624DB0D66001FD47A /* ViewModel.swift */,
 			);
 			path = DynamicCollectionViewSample;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				2EB8F90124D5AC8A0028FC70 /* AppDelegate.swift in Sources */,
 				2EB8F93224D5ACC00028FC70 /* DynamicCollectionViewCell.swift in Sources */,
 				2EB8F90324D5AC8A0028FC70 /* SceneDelegate.swift in Sources */,
+				2EC8E9A724DB0D66001FD47A /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
